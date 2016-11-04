@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tpccina.tpcclesson04.PageOneActivity">
+
+    <TextView
+        android:id="@+id/pageone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Page One"
+        android:textColor="@color/colorAccent"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/pageone_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_blue_dark"
+        android:elevation="10dp"
+        android:text="Next"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pageone_title"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pageone_label1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight= "1"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Your parcel"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <EditText
+                android:id="@+id/pageone_text1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="parcel text entry"
+                android:inputType="textPersonName"
+                android:paddingLeft="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pageone_title"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pageone_label2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Another parcel"
+                android:hint="parcel date entry"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/pageone_text2" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pageone_title"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pageone_label3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="Another parcel"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="textMultiLine"
+                android:hint="parcel comment"
+                android:id="@+id/pageone_text3" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
